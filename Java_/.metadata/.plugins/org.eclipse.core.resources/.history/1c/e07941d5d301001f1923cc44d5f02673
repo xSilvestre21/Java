@@ -1,0 +1,22 @@
+package pjAula11;
+
+import java.io.File;
+
+public class ListaDiretorios {
+	public static void main(String[] args) {
+		File diretorio = new File("C:\\");
+		if(diretorio.isDirectory()) {
+			String arquivos[] = diretorio.list();
+			for(int i = 0; i < arquivos.length; i++) {
+				File f = new File(arquivos[i]);
+				/*if(f.isDirectory()) {
+					System.out.println("Diretorio: " + arquivos[i]);
+				} else {
+					System.out.println("Arquivo " + arquivos[i]);
+				}*/
+				System.out.println(f.isDirectory() ? "Diretório: " 
+						: "Arquivo: " + arquivos[i]);
+			}
+		}
+	}
+}

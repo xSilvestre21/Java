@@ -1,0 +1,25 @@
+package pjAula11;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class EscreveArquivo {
+	public static void main(String[] args) {
+		String texto = "Minha nossa senhora, o impossível aconteceu meu Deus do"
+				+ "céu, gooooooooolllllllllllll,"
+				+ "do milagre, do impossível, um gol mágico, o gol mais"
+				+ "improvável da história, Sergi Roberto, Sergi Roberto";
+		
+		String nome_arq = "memoria.txt";
+		
+		// Estrutura para Escrita
+		try {
+			FileWriter arquivoSaida = new FileWriter(nome_arq);
+			BufferedWriter buffer = new BufferedWriter(arquivoSaida);s
+		} catch (IOException e) {
+			System.err.println("Erro ao abrir o arquivo.");
+		}
+	
+	}
+}

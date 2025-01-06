@@ -1,0 +1,8 @@
+package pjAula11;
+
+public class PrimeiroTexto {
+	public static void main(String[] args) {
+		String informacoes = "";
+		File arquivo = new File("MeuPrimeiroArquivo.txt");
+	}
+}
